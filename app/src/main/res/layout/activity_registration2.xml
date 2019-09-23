@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb0c9"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr.FinMan"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="REGISTRATION"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="60dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/textbox"
+                android:layout_marginTop="2dp">
+
+                <EditText
+                    android:id="@+id/txt_login_email"
+                    style="@style/RobotoTextViewStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email"
+                    android:background="@color/transparent"
+                    android:layout_margin="5dp"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textSize="17dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number"
+                    android:gravity="left"
+                    android:background="@color/transparent"
+                    android:layout_margin="5dp"
+                    style="@style/RobotoTextViewStyle"/>
+                <com.lamudi.phonefield.PhoneEditText
+                    android:background="@color/transparent"
+                    android:id="@+id/txt_login_contactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/transparent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            android:text="User Type :"
+                            android:textAlignment="center" />
+
+                        <RadioGroup
+                            android:id="@+id/txt_login_userType"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <RadioButton
+                                android:id="@+id/user"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="User"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/gray" />
+
+                            <RadioButton
+                                android:id="@+id/biller"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Biller"
+                                android:textColor="@color/gray" />
+
+                        </RadioGroup>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Information"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/textbox"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/txt_login_username"
+                    style="@style/RobotoTextViewStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Username"
+                    android:layout_margin="5dp"
+                    android:background="@color/transparent"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="17dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/gray">
+
+                <EditText
+                    android:id="@+id/txt_login_password"
+                    style="@style/RobotoTextViewStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:layout_margin="5dp"
+                    android:inputType="textPassword"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:textSize="17dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/textbox"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/gray">
+
+                <EditText
+                    android:id="@+id/txt_login_re_password"
+                    style="@style/RobotoTextViewStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Re-Password"
+                    android:background="@color/transparent"
+                    android:layout_margin="5dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="17dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="89dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/cardcolor">
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    style="@style/RobotoTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:text="Register"
+                    android:textSize="17dp"
+                    android:textColor="@color/white" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:textColor="@color/dim_gray"
+                android:text="2/2"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="103dp"
+        android:layout_height="102dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/user_backgroud_login"
+        android:elevation="4dp"
+        android:src="@drawable/profile" />
+</RelativeLayout>

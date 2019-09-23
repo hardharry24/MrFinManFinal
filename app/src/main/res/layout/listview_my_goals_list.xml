@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/img_listview_my_goal"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:background="@color/transparent" />
+
+            <ImageView
+                android:id="@+id/lbliconStatus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="9dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_info"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/lbl_mygoal_name"
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/img_listview_my_goal"
+                android:layout_marginTop="4dp"
+                android:text="Salary"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/lbl_mygoal_date"
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/lbl_mygoal_name"
+                android:layout_marginBottom="2dp"
+                android:text="Salary"
+                android:textColor="@color/dim_gray"
+                android:textSize="10dp" />
+
+
+            <TextView
+                android:id="@+id/lbl_mygoal_amount"
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="240dp"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="Salary"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+
+
+</LinearLayout>

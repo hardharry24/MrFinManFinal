@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_margin="10dp"
+    android:id="@+id/bill_dialogue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/bill_title"
+        android:textColor="@color/cardcolor"
+        style="@style/RobotoTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Update User Details"
+        android:layout_centerInParent="true"
+        android:layout_margin="2dp"
+        android:fontFamily="@font/hestinafont"
+        android:textSize="20dp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="33dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:text=""/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/gray"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/lbl_user_Lname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/transparent"
+                                    android:hint="Lastname"
+                                    android:layout_marginStart="10dp"
+                                    android:singleLine="true"
+                                    android:textSize="15dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/gray"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/lbl_user_Fname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Firstname"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/transparent"
+                                    android:singleLine="true"
+                                    android:textSize="15dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/gray"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/lbl_user_MIname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/transparent"
+                                    android:hint="MI"
+                                    android:layout_marginStart="10dp"
+                                    android:singleLine="true"
+                                    android:textSize="15dp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/gray"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <EditText
+                                    android:id="@+id/lbl_user_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="textEmailAddress"
+                                    android:hint="Email"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/transparent"
+                                    android:singleLine="true"
+                                    android:textSize="15dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/gray"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/lbl_user_contactNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Contact Number"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/transparent"
+                                    android:singleLine="true"
+                                    android:inputType="phone"
+                                    android:maxLength="11"
+                                    android:textSize="15dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/gray"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/lbl_user_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/transparent"
+                                    android:hint="Username"
+                                    android:layout_marginStart="10dp"
+                                    android:singleLine="true"
+                                    android:textSize="15dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/gray"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:passwordToggleEnabled="true"
+                                android:layout_margin="2dp">
+
+                                <EditText
+                                    android:id="@+id/lbl_user_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Password"
+                                    android:layout_marginStart="10dp"
+                                    android:singleLine="true"
+                                    android:background="@color/transparent"
+                                    android:inputType="textPassword"
+                                    android:textSize="15dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/gray"
+                        app:cardCornerRadius="5dp">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white_smoke"
+                            app:cardCornerRadius="5dp">
+                            <Spinner
+                                android:id="@+id/spinnerRole"
+                                android:layout_marginStart="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/roleType"/>
+                        </android.support.v7.widget.CardView>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_marginTop="20dp">
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="5dp"
+                        android:backgroundTint="@color/fbutton_color_belize_hole">
+
+                        <Button
+                            android:id="@+id/btnClose"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:text="SAVE"
+                            android:textColor="@color/white" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+</RelativeLayout>

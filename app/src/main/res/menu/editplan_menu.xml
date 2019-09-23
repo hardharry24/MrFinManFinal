@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/edit_eye_b_plan"
+        android:icon="@drawable/ic_eye"
+        android:title="setting"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/edit_setting_b_plan"
+        android:icon="@drawable/ic_setting"
+        android:title="settings"
+        app:showAsAction="always"/>
+</menu>

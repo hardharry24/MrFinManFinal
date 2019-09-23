@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/lbliconStatus"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/debt_lblIcon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        
+        <TextView
+            android:id="@+id/debt_lbl_name"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_toRightOf="@+id/debt_lblIcon"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/debt_lbl_amount"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Php 0.00"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/debt_lbl_date"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:text="date"
+            android:layout_toRightOf="@+id/debt_lblIcon"
+            android:textColor="@color/gray"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/debt_lbl_balance"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:text="date"
+            android:textColor="@color/gray"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

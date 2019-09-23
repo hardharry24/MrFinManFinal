@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Biller.frag_chargebill">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="30dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_toLeftOf="@+id/btnShow">
+
+                        <EditText
+                            android:id="@+id/txt_frag_charge_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="--- Select user ---"
+                            android:textColorHint="@color/gray"
+                            android:background="@color/transparent"
+                            android:textSize="20dp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/btnShow"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="2dp"
+                        android:layout_margin="1dp"
+                        android:layout_alignParentEnd="true"
+                        >
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/btneditUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/cardcolor"
+                            android:src="@android:drawable/ic_menu_more" />
+                    </android.support.v7.widget.CardView>
+
+
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/user"
+            android:backgroundTint="@color/cardcolor"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="69dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/peso" />
+
+                    <EditText
+                        android:id="@+id/txt_my_bill_amount"
+                        android:layout_width="196dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/transparent"
+                        android:gravity="left"
+                        android:hint="0.00"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="40dp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/mygoal_new_backspace"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/backspace" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/amount"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/cardcolor">
+
+                        <EditText
+                            android:id="@+id/txt_new_bill_name"
+                            style="@style/RobotoTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/amount"
+                            android:background="@color/transparent"
+                            android:drawableLeft="@drawable/ic_today_blue"
+                            android:drawablePadding="10dp"
+                            android:maxLines="1"
+                            android:hint="Bill Name"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dim_gray" />
+                    </android.support.design.widget.TextInputLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/cardcolor">
+
+                        <EditText
+                            android:id="@+id/txt_new_bill_desc"
+                            style="@style/RobotoTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/amount"
+                            android:background="@color/transparent"
+                            android:drawableLeft="@drawable/ic_pen_24dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Description / Note"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dim_gray" />
+                    </android.support.design.widget.TextInputLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/im"
+                            android:layout_width="25dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_today_blue"/>
+                        <Spinner
+                            android:id="@+id/spinnerBillType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:layout_toRightOf="@+id/im"
+                            android:entries="@array/bill_type">
+                        </Spinner>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/due_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/cardType"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/cardcolor"
+                    android:layout_toLeftOf="@+id/lblSelectDt">
+
+                    <EditText
+                        android:id="@+id/txt_new_bill_due_date"
+                        style="@style/RobotoTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/amount"
+                        android:background="@color/transparent"
+                        android:drawableLeft="@drawable/ic_target_date"
+                        android:drawablePadding="10dp"
+                        android:hint="Due Date"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dim_gray" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:id="@+id/lblSelectDt"
+                    android:layout_width="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_height="match_parent"
+                    android:src="@android:drawable/ic_menu_more"
+                    android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/due_date"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/fbutton_color_peter_river">
+
+            <Button
+                android:id="@+id/btn_new_bills_save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Charge Bill"
+                android:drawableTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

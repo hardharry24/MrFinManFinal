@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Mr.FinMan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="income_type">
+        <item>-- Select Income Type --</item>
+        <item>Weekly</item>
+        <item>Semi-Monthly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="view_type">
+        <item>-- Select  --</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+        <item>All</item>
+    </string-array>
+
+    <string-array name="budget_type">
+        <item>-- Select Budget Type  --</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="bill_type">
+        <item>-- Select Bill Payment Type --</item>
+        <item>Onetime</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="debt_type">
+        <item>-- Select Type --</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+
+
+    <string-array name="roleType">
+        <item>-- Select User Role --</item>
+        <item>User</item>
+        <item>Biller</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="filterUser">
+        <item>-- Select User Role --</item>
+        <item>User</item>
+        <item>Biller</item>
+        <item>Admin</item>
+        <item>All</item>
+    </string-array>
+
+
+</resources>

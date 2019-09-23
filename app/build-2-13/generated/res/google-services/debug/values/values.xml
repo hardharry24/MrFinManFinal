@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">644837502863-8mp6s5gnk9m8947no9vi99fl15cub5c5.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://mr-finman.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">644837502863</string>
+    <string name="google_api_key" translatable="false">AIzaSyCU2G1W_QA2F1WiK_Arfl5229bioW_89rw</string>
+    <string name="google_app_id" translatable="false">1:644837502863:android:74feabeaa6991419</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCU2G1W_QA2F1WiK_Arfl5229bioW_89rw</string>
+    <string name="google_storage_bucket" translatable="false">mr-finman.appspot.com</string>
+    <string name="project_id" translatable="false">mr-finman</string>
+</resources>

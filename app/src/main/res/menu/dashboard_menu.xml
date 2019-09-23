@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        >
+
+   <!-- <item
+        android:id="@+id/dash_Notification"
+        android:icon="@drawable/ic_notifications_white"
+        android:title="Notification"
+        android:iconTint="@color/white"
+        app:showAsAction="always"/>-->
+
+    <item
+        android:id="@+id/dash_settings"
+        android:icon="@drawable/ic_setting"
+        android:title="setting"
+        app:showAsAction="always"/>
+
+
+</menu>

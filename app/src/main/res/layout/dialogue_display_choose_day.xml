@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_alignParentStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Select Triggering Day of the Month"
+                android:textSize="13dp"
+                android:textColor="@color/gray"/>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/gray"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/txtboxAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/lblmsg"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="2dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp">
+
+                          <Spinner
+                              android:id="@+id/spinnerDay"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:textAlignment="center"
+                              android:background="@color/transparent"></Spinner>
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/txtboxAmount"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:backgroundTint="@color/cardcolor"
+                        app:cardCornerRadius="10dp">
+
+                        <Button
+                            android:id="@+id/btnOK"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:text="DONE"
+                            android:textColor="@color/white"
+                            android:textSize="30dp"/>
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_24dp"
+                android:title="Home"
+                />
+            <item
+                android:id="@+id/nav_goals"
+                android:icon="@drawable/ic_goal_24dp"
+                android:title="Goals" />
+
+            <item
+                android:id="@+id/nav_history"
+                android:icon="@android:drawable/ic_menu_recent_history"
+                android:title="History" />
+            <item
+                android:id="@+id/nav_reports"
+                android:icon="@drawable/ic_report_24dp"
+                android:title="Reports" />
+        </menu>
+    </item>
+
+    <item android:title="Payables">
+        <menu>
+            <item
+                android:id="@+id/nav_debts"
+                android:icon="@drawable/ic_debt_24dp"
+                android:title="Debts" />
+            <item
+                android:id="@+id/nav_bills"
+                android:icon="@drawable/ic_bills_24dp"
+                android:title="Bills" />
+        </menu>
+    </item>
+
+    <item android:title="Chart Display Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_view_type"
+                android:icon="@drawable/ic_eye"
+                android:title="View Type" />
+        </menu>
+    </item>
+
+    <item android:title="Account Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_reset"
+                android:title="Reset"
+                android:icon="@drawable/ic_reset"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+    </item>
+
+</menu>

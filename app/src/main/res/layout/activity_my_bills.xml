@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme_Activities"
+    android:background="@color/seashell"
+    tools:context=".Activity_my_bills">
+
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listview_my_bills_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+</RelativeLayout>

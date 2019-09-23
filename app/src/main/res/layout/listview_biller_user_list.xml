@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/profile"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/lbl_biller_user_name"
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Salary"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                android:layout_marginStart="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lbl_biller_user_email"
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_biller_user_name"
+                android:text="Salary"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_marginStart="37dp"
+                android:textColor="@color/dim_gray"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/lbl_biller_user_duedate"
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_alignStart="@+id/lbl_biller_user_name"
+                android:text="Salary"
+                android:textColor="@color/dim_gray"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/lbl_biller_user_type"
+                style="@style/RobotoTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="146dp"
+                android:text="Salary"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:textColor="@color/dim_gray"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/lbl_biller_user_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:background="@color/transparent"
+                android:src="@mipmap/bill" />
+
+        </RelativeLayout>
+
+
+</LinearLayout>

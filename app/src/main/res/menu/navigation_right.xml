@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="My Budget Information">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_setBudget"
+                android:icon="@drawable/ic_setbudget"
+                android:title="My Budget" />-->
+            <item
+                android:id="@+id/nav_setBudgetPlan"
+                android:icon="@drawable/ic_budetgetplan"
+                android:title="My Budget Plan" />
+            <item
+                android:id="@+id/nav_setIncome"
+                android:icon="@drawable/ic_income"
+                android:title="My Income" />
+        </menu>
+    </item>
+    <item android:title="My Savings Information">
+        <menu>
+            <item
+                android:id="@+id/nav_saving"
+                android:icon="@drawable/savings"
+                android:title="Savings" />
+        </menu>
+    </item>
+</menu>

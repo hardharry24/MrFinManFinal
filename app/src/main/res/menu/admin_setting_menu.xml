@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/admin_setting_new_user"
+        android:icon="@drawable/ic_setting"
+        android:title="Register User"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/admin_setting_deleted_user"
+        android:icon="@drawable/ic_setting"
+        android:title="Deleted User"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/admin_setting_generate"
+        android:icon="@drawable/ic_setting"
+        android:title="Generate Report"
+        app:showAsAction="collapseActionView"/>
+</menu>

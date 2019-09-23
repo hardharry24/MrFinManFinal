@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teamcipher.mrfinman.mrfinmanfinal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <service android:name="services.RealtimeBudgetRemCheck" />
+        <service android:name="services.BillCheck" />
+        <service android:name="services.DebtCheck" />
+        <service android:name="services.GoalCheck" />
+        <service android:name="background.background" />
+
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.MainActivity"
+            android:theme="@style/Theme.MyCustomTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_expense"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyCustomTheme" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_income"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_editbudgetplan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_add_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.ActivityRegistration"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyCustomTheme" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.ActivityRegistration2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyCustomTheme" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_myincome"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_transactions"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_my_budget_plan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_my_goals_add"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_my_debt_add"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_my_bills"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_my_bills_add"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.DialogTransactionDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Testing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_set_budget"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Template"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Biller.Activity_dashboard_biller"
+            android:theme="@style/Theme.Biller" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Admin.Activity_dashboard_admin"
+            android:theme="@style/Theme.Admin" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_forgot_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyCustomTheme" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_Confirmation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyCustomTheme" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_Registration_biller"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyCustomTheme" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_reset_pword"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyCustomTheme" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.PopUp.BillPopUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.PopUp.GoalPopUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.PopUp.DebtPopUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+
+        <service android:name="services.FirebaseMessagingServices" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="services.FirebaseInstanceIDServices" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.teamcipher.mrfinman.mrfinmanfinal.Activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyOwn" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.teamcipher.mrfinman.mrfinmanfinal.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.teamcipher.mrfinman.mrfinmanfinal.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.teamcipher.mrfinman.mrfinmanfinal.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>

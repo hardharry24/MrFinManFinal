@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/borrowImg"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/borrowCatName"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:text="Foods"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/borrowBal"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:text="date"
+            android:layout_toRightOf="@+id/borrowImg"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/amtTxt"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            app:cardCornerRadius="5dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white_smoke">
+            <EditText
+                android:id="@+id/borrowtxtAmt"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:maxLength="4"
+                android:inputType="number"
+                android:textColorHint="@color/gray"
+                android:background="@color/transparent"
+                android:text="0"
+                android:hint="0"
+                android:textColor="@color/gray"
+                android:gravity="center" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/lblRem"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/amtTxt"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:text="Bal :"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/borrowRemaining"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lblRem"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Balance :"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

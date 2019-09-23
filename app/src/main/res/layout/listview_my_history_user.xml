@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/lblname"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white_smoke"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/lbldetails"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Php 0.00"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/lbldate"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/gray"
+            android:text="date"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/lblid"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="1"
+            android:textSize="10dp" />
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_transaction"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/icon"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
